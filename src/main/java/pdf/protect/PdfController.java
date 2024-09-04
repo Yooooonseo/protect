@@ -61,7 +61,7 @@ public class PdfController {
         }
     }
 
-    @GetMapping("/download-pdf")
+   @GetMapping("/download-pdf")  //서버에 저장된 특정 PDF 파일을 클라이언트가 다운로드할 수 있게 함 (나중에)
     public ResponseEntity<InputStreamResource> downloadPDF() {
         try {
             File pdfFile = new File("path/to/pdf-file.pdf");
